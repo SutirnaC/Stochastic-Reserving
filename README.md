@@ -1,20 +1,20 @@
 # Stochastic-Reserving
 Implement a stochastic reserving framework to quantify reserve risk, generate a full probability distribution of unpaid claims, and calculate the Value at Risk (VaR) for capital modeling.
 
-Plaintext
+```text
 /Stochastic-Reserving-Model
 │
 ├── data/
-│   ├── triangle_generator.py             # Script simulating lognormal/ODP claims
-│   └── raw_claims_triangle.csv
+│   ├── triangle_generator.py                 # Script simulating ODP claims with calendar year noise
+│   └── raw_claims_triangle.csv               # 10x10 incremental paid claims data
 │
 ├── notebooks/
-│   ├── 01_Deterministic_Reserving_CL_BF.ipynb
-│   ├── 02_Mack_Analytical_Variance.ipynb
-│   └── 03_ODP_Bootstrap_Simulation.ipynb
+│   ├── 01_Deterministic_Reserving_CL_BF.ipynb # Basic Chain Ladder & Bornhuetter-Ferguson
+│   ├── 02_Mack_Analytical_Variance.ipynb      # Mack standard errors and residual diagnostics
+│   └── 03_ODP_Bootstrap_Simulation.ipynb      # 10k simulations, VaR, and CoV calculations
 │
 ├── dashboard/
-│   └── Reserving_Capital_Dashboard.pbix
+│   └── Reserving_Capital_Dashboard.pbix       # Power BI dashboard for CRO/CFO reporting
 │
 └── README.md
 
