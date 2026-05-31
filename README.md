@@ -33,14 +33,6 @@ Risk Identification: Isolated parameter variance from process variance using ana
 
 ---
 
-Repository Structure
-
-```text
-/Stochastic-Reserving-Model
-│
-├── data/
-│   ├── triangle_generator.py                 # Script simulating ODP claims with calendar year noise
-
 Methodology & Actuarial Framework
 1. Deterministic Baseline
 Chain Ladder (CL): Calculated volume-weighted Age-to-Age (ATA) factors to derive the central estimate for mature accident years.
